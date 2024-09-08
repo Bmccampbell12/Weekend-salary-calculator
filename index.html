@@ -34,8 +34,8 @@
           placeholder="First Name"
           type="text">
 
-         <!--<input type="text" id="" name="name" 
-          required minlength="4" maxlength="8" size="10" />--> 
+         <input type="text" id="" name="name" 
+          required minlength="4" maxlength="8" size="10" />
 
         <input data-testid="lastNameInput"
           id="lastNameInput" 
@@ -60,18 +60,13 @@
         <button onClick="submitText(event)">Submit</button> 
         <button onClick="clearFields(event)">Clear Fields</button> <!--clearFields() to this onclick!-->
         <section>
-          <tbody id = "table"></tbody>
-          <h3>🤖</h3>
+          <tbody id ="table"></tbody>
+          
+          <h3></h3>
           <table>
             <thead>
+              <tr></tr>
               <tbody id ="table"></tbody>
-              <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Employee ID</th> 
-                <th>Job Title</th> 
-                <th>Annual Salary</th> 
-              </tr>
             </thead>
           </table>
         </section>
