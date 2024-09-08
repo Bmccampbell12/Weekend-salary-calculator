@@ -14,6 +14,8 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="#style.css">
   <title>Salary Calculator</title>
+  
+  
 </head>
 <body>
   <header>
@@ -22,6 +24,47 @@
   <main>
     <h2>Add Employee</h2>
     <h2>Employees</h2>
+    <section></section>
+      <h3>Calculate Salary</h3>
+      <form>
+        <input id="affirmation"
+          placeholder="First Name"
+          type="text">
+
+        <input id="Author"
+          placeholder="Last Name"
+          type="text">
+          <input id="affirmation"
+          placeholder="Employee ID  *required"
+          type="text">
+
+          <input id="affirmation"
+          placeholder="Job Title"
+          type="text">
+
+          <input id="affirmation"
+          placeholder="Annual Salary"
+          type="text">
+
+        <button onClick="submitText(event)">Submit</button> 
+        <button onClick="clearFields(event)">Clear Fields</button> <!--added a clearFields() to this onclick!-->
+        <section>
+          <h3>Your Affirmations:</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Affirmation Text</th>
+                <th>Affirmation Author</th>
+                <th>Delete</th> 
+              </tr>
+            </thead>
+            <tbody id = "table">
+          
+            </tbody>
+          </table>
+        </section>
+      </form>
+    </section>
   </main>
   <footer>
     <p>Total Monthly</p>
