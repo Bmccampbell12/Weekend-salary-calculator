@@ -2,17 +2,19 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href=".js" rel="stylesheet">
   <script defer src=".js"></script>
 </head>
   
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="#style.css">
+  <link rel="stylesheet" href="style.css">
   <title>Salary Calculator</title>
   
   
@@ -27,40 +29,50 @@
     <section></section>
       <h3>Calculate Salary</h3>
       <form>
-        <input id="affirmation"
+        <input data-testid="firstNameInput"
+          id="firstNameInput"
           placeholder="First Name"
           type="text">
 
-        <input id="Author"
+         <!--<input type="text" id="" name="name" 
+          required minlength="4" maxlength="8" size="10" />--> 
+
+        <input data-testid="lastNameInput"
+          id="lastNameInput" 
           placeholder="Last Name"
           type="text">
-          <input id="affirmation"
+
+          <input data-testid="idInput"
+          id="idInput" 
           placeholder="Employee ID  *required"
           type="text">
 
-          <input id="affirmation"
+          <input data-testid="titleInput"
+          id="titleInput" 
           placeholder="Job Title"
           type="text">
 
-          <input id="affirmation"
+          <input data-testid="annualSalaryInput"
+          id="annualSalaryInput" 
           placeholder="Annual Salary"
           type="text">
 
         <button onClick="submitText(event)">Submit</button> 
         <button onClick="clearFields(event)">Clear Fields</button> <!--clearFields() to this onclick!-->
         <section>
+          <tbody id = "table"></tbody>
           <h3>🤖</h3>
           <table>
             <thead>
+              <tbody id ="table"></tbody>
               <tr>
-                <th>🙌🏾</th>
-                <th>✌🏾</th>
-                <th>✊🏾</th> 
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Employee ID</th> 
+                <th>Job Title</th> 
+                <th>Annual Salary</th> 
               </tr>
             </thead>
-            <tbody id = "table">
-          
-            </tbody>
           </table>
         </section>
       </form>

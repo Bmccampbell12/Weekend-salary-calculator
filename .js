@@ -16,16 +16,25 @@ let tableBody = document.getElementById("table")
 
 
 
-
-
-
+function clearFields(event){
+  let parentRow = event.target.parentElement
+  parentRow.remove()
+}
 
 
 
 function submitText(){
-  let deleteButton = `<td onClick="deleteAffirmation(event)">❌</td>`
-  let formAffirmation = document.getElementById("affirmation").value  
-  let formAuthor = document.getElementById("Author").value   
-  tableBody.innerHTML +=   `<tr><td>${formAffirmation}</td><td>${formAuthor}</td>${deleteButton}</tr>`
-  event.preventDefault();
+  let clearFields = `<button onClick="clearFields(event)">Clear Fields</button>`
+
+  let firstNameInput = document.getElementById("firstNameInput").value;
+  let lastNameInput = document.getElementById("lastNameInput").value;
+  let idInput = document.getElementById("firstNameInput").value;
+  let titleInput = document.getElementById("firstNameInput").value;
+  let annualSalaryInput = document.getElementById("firstNameInput").value;
+ 
+
+
+
+  tableBody.innerHTML += `<tr><td>${firstNameInput}</td><td>${lastNameInput}</td><td>${idInput}</td><td>${titleInput}</td><td>${annualSalaryInput}</td>${clearFields}</tr>`
+  (event).preventDefault();
 } 
