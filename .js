@@ -1,26 +1,29 @@
-onReady();
 
-function onReady() {
-  //console.log('Javascript is working!');
+
+let tableBody = document.getElementById("employee-table")
+
+function clearFields(event) {
+  let parentRow = event.target.parentElement;   // deleting function: will clear fields 
+
+  parentRow.remove()
+  console.log('hello');
 };
+
+
+//let inputs = parentRow.querySelectorAll('input, select');
+
+//let clearFields = `<button onClick="clearFields(event)">Clear Fields</button>`
 
 document.addEventListener("DOMContentLoaded", ()=> {
   let form = document.getElementById("employee-form");  //event listener 
-  form.addEventListener("submit", submitText);
+  form.addEventListener("submit", submitButton);
 });
 
 let totalMonthlyCost = 0; 
 
-let tableBody = document.getElementById("table")
 
-let inputs = parentRow.querySelectorAll('input, select');
 
-// function clearFields(event) {
-//   let parentRow = event.target.parentElement;   // deleting function: will clear fields 
-//   parentRow.remove()
-// };
-
-function submitText(event) {
+function submitButton(event) {
   event.preventDefault();  //will hopefully prevent default now!
 
   let firstNameInput = document.getElementById("firstNameInput").value;
@@ -38,7 +41,7 @@ function submitText(event) {
   totalMonthlyCost += monthlySalary;  //adding to total
   updateFooter(); //should return the total to the footer
 
-  let tableBody = document.getElementById("employee-table"); 
+  let tableBody = document.getElementById("table"); 
      //adds employee to table
   let newRow = document.createElement("tr");
 

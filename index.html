@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">  <!--linked href=".js" rel="stylesheet"-->
-  <script defer src="app.js"></script>
+  <script defer src=".js"></script>
   <title>Salary Calculator</title>
 </head>
   <body>
@@ -26,7 +26,7 @@
       <input data-testid="idInput" id="idInput" placeholder="Employee ID  *required" type="text"/>
       <input data-testid="titleInput" id="titleInput" placeholder="Job Title" type="text"/>
       <input data-testid="annualSalaryInput" id="annualSalaryInput" placeholder="Annual Salary" type="text"/> 
-    <button type="submit" onClick="submitText(event)">Submit</button>
+    <button data-testid="submitButton">Submit</button> 
   </form>
 </section>
         
@@ -45,7 +45,7 @@
             <th>          </th> <!--reserved for the delete button-->
             </tr>
           </thead>
-          <tbody id="employee-table"> <!--rows populate below-->
+          <tbody id="table"> <!--rows populate below-->
             
             </tbody>
           </table>
