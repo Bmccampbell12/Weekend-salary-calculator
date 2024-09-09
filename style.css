@@ -1,40 +1,68 @@
+/* LAYOUT & GENERAL STYLE */
+body{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+section{
+  width: 90%;
+  margin: 20px auto;
+}
+
 /* HEADER/FOOTER */
 header, footer {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
+
   h1 {
     font-size: 2.5em;
+    margin: 0;
   }
 
   /* FORM ELEMENTS */
+  form {
+display: flex;
+gap: 10px;
+margin: 20px 0;
+  }
+
 input {
-    padding: .5em;
+    padding: 10px;
     width: 150px;
     background: #FCFCFC;
     border: 1px solid;
   }
   button {
-    padding: .5em;
-    width: 75px;
+    padding: 1em;
+    width: 100px;
   }
 
-  /* TABLE */
+  /* TABLE STYLE */
 table {
     width: 100%;
     text-align: left;
-  }
-  table, th, td {
-    border: 1px solid black;
     border-collapse: collapse;
-    height: 2.15em;
   }
+
+
   th, td {
-    padding: .5em;
+    border: 1px solid black; 
+    height: 2.15em;
+    padding: 10px;
     min-width: 3.5em;
+    text-align: left;
+    min-width: 100px;
   }
+  th {
+    background-color: #7a7a7a;
+    color: #fcfcfc;
+  }
+  
   thead {
     background: #7a7a7a;
     color: #fcfcfc;
@@ -45,3 +73,4 @@ table {
   tbody tr:nth-child(even){
     background: #dcdcdc;
   }
+  
