@@ -12,7 +12,6 @@ section{
 
 /* HEADER/FOOTER */
 header, footer {
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,14 +62,15 @@ table {
     color: #fcfcfc;
   }
   
-  thead {
-    background: #7a7a7a;
-    color: #fcfcfc;
-  }
   tbody tr:nth-child(odd){ 
     background: #fcfcfc;
   }
   tbody tr:nth-child(even){
     background: #dcdcdc;
   }
+  .over-budget {
+    color: red;
+    font-weight: bold;
+  }
   
+

@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <!--link href=".js" rel="stylesheet"-->
+  <link rel="stylesheet" href="style.css">  <!--linked href=".js" rel="stylesheet"-->
   <script defer src="app.js"></script>
   <title>Salary Calculator</title>
 </head>
-  
-<section>
+  <body>
+
+
  <header>
   <h1>Salary Calculator</h1>
   </header>
@@ -21,7 +21,6 @@
   <section>
     <h2>Add Employee</h2>
     <form id="employee-form">
-    <!--div class="form-header"-->
       <input data-testid="firstNameInput" id="firstNameInput" placeholder="First Name" type="text"/>
       <input data-testid="lastNameInput" id="lastNameInput" placeholder="Last Name" type="text"/>
       <input data-testid="idInput" id="idInput" placeholder="Employee ID  *required" type="text"/>
@@ -34,8 +33,7 @@
         
           
         <section>
-          <h2>Employees</h2>
-                                  <!--<tbody id ="table"></tbody>-->  <!--may keep-->
+          <h2>Employees</h2>  <!--<tbody id ="table"></tbody>-->  <!--may keep-->
           <table>
             <thead>
               <tr>
@@ -44,50 +42,19 @@
             <th>Employee ID</th> 
             <th>Job Title</th> 
             <th>Annual Salary</th> 
-            <th></th> <!--reserved for the delete button-->
+            <th>          </th> <!--reserved for the delete button-->
             </tr>
           </thead>
-          <tbody id="employee-table">
-            <!--rows will hopefully populate below-->
+          <tbody id="employee-table"> <!--rows populate below-->
+            
             </tbody>
           </table>
           </section>
 
-          
-               <!-- <thead>
-                <tr>
-                  <th></th>
-                  <th></th>
-                  <th></th> 
-                  <th></th> 
-                  <th></th> 
-                  <th></th>
-              </tr>
-              
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-              
-            </thead>
-          </form>
-        <tbody>
-               <!--<button onClick="clearFields(event)">Clear Fields</button>--> <!--use this with an event/listener to populate when submitted-->
-            <!-- </tbody>
-          <table>
-            <thead>
-              <tr></tr>
-              <tbody id ="table"></tbody>
-            </thead>
-          </table>
-        </section>
-      </form>
-    </section>
-  </main> -->
-
   <footer>
-    <p>Total Monthly</p>
+    <p>Total Monthly: $0.00</p>
   </footer>
 </body>
 </html>
+
+
